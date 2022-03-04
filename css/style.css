@@ -58,3 +58,12 @@ img{
 .centrar-texto{
     text-align: center;
 }
+/**   Header   **/
+.header{
+    background-image:url(../img/header.jpg);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    background-attachment: fixed;
+}
