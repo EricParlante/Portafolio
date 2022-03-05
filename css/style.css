@@ -63,7 +63,6 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
-    background-attachment: fixed;
     padding-top: 1rem;
 }
 .logo1 {
@@ -75,15 +74,23 @@ img{
     color: var(--blanco);
 }
 .barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
-.navegacion {
-    display: flex;
-    gap: 2rem;
+@media(min-width:768px){
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion {
+        display: flex;
+        gap: 1rem;
+    }
 }
+
 .navegacion_a {
+    display: block;
     font-weight: bold;
     color: var(--blanco);
     border: 1px solid transparent;
@@ -93,3 +100,31 @@ img{
     border: 1px solid var(--colorsecundario);
     border-radius: 5%;
 }
+.introduccion {
+    color: var(--blanco);
+}
+.stack { 
+    font-size: 6rem;
+    color: var(--colorsecundario);
+}
+.saludo2{
+    margin-top: 0;
+}
+.saludo{
+    margin-top: 0;
+    font-weight: normal;
+}
+
+@media(min-width:768px){
+    .introduccion{
+        margin-top: 15rem;
+    }
+    .stack {
+        font-size: 8rem;
+    }
+    .saludo2{
+        margin-top: auto;
+    }
+}
+
+
