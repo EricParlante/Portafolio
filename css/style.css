@@ -42,10 +42,15 @@ h3{
 h4{
     font-size: 2.8rem;
 }
+h5{
+    font-size: 2rem;
+}
 img{
     max-width: 100%;
 }
-
+p{
+    color: var(--blanco);
+}
 /**        UTILIDADES         **/
 .no-margin{
     margin: 0;
@@ -59,7 +64,7 @@ img{
 /**   Header   **/
 .header{
     background-image:url(../img/header.webp);
-    height: 60rem;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -105,26 +110,81 @@ img{
 }
 .stack { 
     font-size: 6rem;
-    color: var(--colorsecundario);
+    color: var(--blanco);
 }
 .saludo2{
     margin-top: 0;
 }
 .saludo{
-    margin-top: 0;
+    margin-top: 3rem;
     font-weight: normal;
 }
 
 @media(min-width:768px){
     .introduccion{
-        margin-top: 15rem;
+        margin-top: 20rem;
     }
     .stack {
-        font-size: 8rem;
+        font-size: 10rem;
     }
     .saludo2{
         margin-top: auto;
     }
 }
-
-
+/***** ACA EMPIEZA EL CONTENIDO   *****/
+.contenido_principal{
+    background-color: var(--colorprimario);
+    padding-top: 10rem;
+    padding-bottom: 10rem;  
+}
+.descripcion{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+   
+}
+.foto {
+    max-width: 90%;
+    -webkit-box-shadow: -13px -12px 0px -3px rgba(251,93,85,1);
+    -moz-box-shadow: -13px -12px 0px -3px rgba(251,93,85,1);
+    box-shadow: -13px -12px 0px -3px rgba(251,93,85,1);
+}
+.descubre{
+    color: var(--colorsecundario);
+    margin:0 auto;
+}
+.sobre_eric{
+    margin:0 auto;
+    color:var(--blanco);
+}
+.barra_corta{
+    border-top: 1px solid var(--colorsecundario);
+    max-width: 8rem;
+    margin-top: 2rem;
+}
+.listas {
+    display: flex;
+    color: var(--blanco);
+    column-gap: 5rem;
+    border: 1px solid var(--colorsecundario);
+    border-radius:10px;
+}
+.elementos_lista{
+    font-weight: bold;
+}
+.li{
+    font-weight: normal;
+}
+.boton{
+    display: inline-block;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--colorsecundario);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    
+}
