@@ -188,3 +188,20 @@ p{
     border-radius: 5px;
     
 }
+/**     FOOTER      **/
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    background-color: var(--colorprimarioclaro);
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display:flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+.icon-tabler:hover{
+    stroke: var(--blanco);
+}
