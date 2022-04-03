@@ -16,6 +16,8 @@
 
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/ani.css" as="style">
+    <link rel="stylesheet" href="css/ani.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -33,9 +35,11 @@
                     <a class="navegacion_a"href="#">Contacto</a>
                 </nav>
             </div> <!--ACA CIERRA LA BARRA-->
-            <div class="introduccion">
-                <h3 class="saludo">Hola, soy Eric.</h3>
-                <h2 class="saludo2">Soy Desarrollador Web <br><span class="stack">Full Stack Jr.</span></h2>
+            <div id="square" class="bounce animated">
+                <div class="introduccion">
+                    <h3 class="saludo">Hola, soy Eric.</h3>
+                    <h2 class="saludo2">Soy Desarrollador Web <br><span class="stack">Full Stack Jr.</span></h2>
+                </div>
             </div><!--ACA CIERRA LA INTRODUCCIÓN-->
         </div>
     </header>
@@ -105,5 +109,7 @@
         </div>
     </footer>
     <script src="/js/reveal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/ani.js"></script>
 </body>
 </html>
