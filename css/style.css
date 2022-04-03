@@ -103,7 +103,7 @@ p{
 }
 .navegacion_a:hover{
     border: 1px solid var(--colorsecundario);
-    border-radius: 5%;
+    border-radius: 5px;
 }
 .introduccion {
     color: var(--blanco);
@@ -176,6 +176,10 @@ p{
 }
 .li{
     font-weight: normal;
+}
+.link_red{
+    color: white;
+    text-decoration:underline;
 }
 .boton{
     display: inline-block;
